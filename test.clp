@@ -54,4 +54,16 @@
    (assert (done))
 )
 
+; IF    headache-yes diarrhea-yes nauseous-no    
+; THEN  DBD {cf 0.6}
+; -  cf ( DBD, headache & diarrhea ) = min [cf (headache), cf (diarrhea)] x cf = input-user(0.5) x 0.6 = 0.3
+; -  Durkin-DBD = initial-cf-DBD + cf ( DBD, headache & diarrhea ) x ( 1 - initial-cf-DBD) 
+;               = 0.4 + 0.3 x ( 1 - 0.4) = 0.58
+; -  Hasil : DBD {0.58} Malaria {0.35} Tifus {0.25}
+
+
+
+
+
+
 
